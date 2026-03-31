@@ -32,7 +32,7 @@ Then execute.
 - Porch daily agent — LIVE. 6am Mountain. Reviews logs, surfaces patterns, emails report.
 - GSC Monday agent — LIVE. Monday 6am. Pulls data, scores opportunities, emails work order.
 - Research agent — BUILDING. Monitors sources, routes findings to skill updates.
-- Skills self-improvement loop — DESIGNING. Reads performance signals, proposes updates, commits to GitHub for morning review.
+- Skills self-improvement loop — DESIGNING (skill stub at ~/skills/user/overnight-loop/). Reads performance signals, proposes updates, commits to GitHub for morning review.
 - Curb Appeal overnight — DESIGNING. GSC pull, score, draft pages, commit to review branch.
 
 ### Performance signals — the feedback loop
