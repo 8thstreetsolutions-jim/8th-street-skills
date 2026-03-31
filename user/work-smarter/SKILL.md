@@ -1,8 +1,7 @@
 <!--
-version: 2.0
-date: 2026-03-31
-source: Major update — reflects live agent status, session start rule, skills architecture
-        consolidation, standard operational patterns, and updated agent designs
+version: 2.1
+date: 2026-04-01
+source: Added Git Commit Rule — keep GitHub in sync after every skill edit
 -->
 
 ---
@@ -34,6 +33,17 @@ version: [X.Y]
 date: [YYYY-MM-DD]
 source: [brief note on what changed]
 -->
+
+---
+
+## Git Commit Rule
+
+After every skill edit, run this from ~/skills/:
+
+    git add -A && git commit -m "[skill name] — [one line description of what changed]" && git push
+
+This keeps GitHub in sync with SiteGround at all times. Never edit a skill without
+committing. The commit message should say what changed and why in plain English.
 
 ---
 
