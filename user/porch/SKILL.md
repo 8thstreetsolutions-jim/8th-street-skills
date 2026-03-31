@@ -80,8 +80,37 @@ No base.json — every client requires its own config file.
 
 **Dashboard:** `pathacross.com/dashboard.php?token=pa-monitor-2026` (fed by dashboard-api.php)
 
+**Dashboard API correct URL:** `https://8thstreetsolutions.com/gateway/dashboard-api.php`  
+(not `/dashboard-api.php` — that path 404s)
+
 **Self-serve flow:** `/get-porch.php` → `/generate-porch.php` → `/porch-ready.php`
 This is John\'s LinkedIn workflow. `build.php` on demo subdomain is the demo generator.
+
+---
+
+## Log File Format
+
+Each client log file follows this exact structure:
+
+```
+========== HH:MM:SS ==========
+Page: https://example.com/page-url
+Lead Qualified: YES|NO
+[Email: address@example.com]  ← only present if lead captured
+
+[12:34 PM] Porch:
+[greeting text]
+
+[12:35 PM] Visitor:
+[visitor message]
+
+[12:35 PM] Porch:
+[bot reply]
+```
+
+A session with no `[Visitor:]` line means the widget was opened but nobody typed — do not count as a conversation.
+
+**Conversation definition:** A log session containing at least one `[Visitor:]` line. Auto-open sessions where only Porch speaks do not count.
 
 ---
 
@@ -464,6 +493,24 @@ platform (5), comparisons (10).
 
 **Leave structure alone.** Meta/deck/schema pass deferred until legal-marketing shows
 click movement in GSC. CTA: all Porch SEO pages point to homepage signup form.
+
+---
+
+## PHP File Style (for patch scripts)
+
+Section headers use box-drawing characters:
+
+```python
+# // ─── SECTION NAME ──────────────────────────────────────────
+```
+
+Use regex to match these anchors, not exact string counts:
+
+```python
+re.search(r'// ─{3} SECTION ─+', src)
+```
+
+Never hardcode the exact number of dashes — counts vary by section.
 
 ---
 
