@@ -1,8 +1,7 @@
 <!--
-version: 2.0
+version: 2.1
 date: 2026-04-01
-source: Major update — GSC agent integration, work order workflow, hub index pattern,
-        sitemap standards, Foundation PHP bug patterns, agent status update
+source: Added Meta Title and Description Standards section (2026)
 -->
 
 ---
@@ -343,6 +342,26 @@ Remaining gap: reliable slug matching (scored query → does /[slug].php exist o
 **What cannot be automated yet:** Content quality judgment — knowing what questions a
 specific vertical\'s clients search, what differentiates one page angle from another.
 Requires content brief template per page type.
+
+---
+
+## Meta Title and Description Standards (2026)
+
+Google rewrites 62%+ of meta descriptions. Write them as ideal — compelling enough to keep, clear enough that Google's rewrite still serves the page well.
+
+**Title formula:** Primary keyword (front-loaded) + value or action + | 8th Street (or client brand)
+- Target: 50-60 chars. When competition clusters at 50-55 chars, a punchy 35-45 char title can stand out.
+- Never: keyword + keyword + keyword. Write for the human scanning results.
+- Test: Would you click this if you saw it in search results?
+
+**Description formula:** Problem or situation + what the page answers + soft CTA
+- Target: 140-160 chars. Place primary keyword in first 120 chars (mobile cutoff).
+- Treat as ad copy — this is the moment between impression and click.
+- Avoid: Generic ("Learn more about..."), passive voice, restating the title.
+
+**The CTR signal:** High impressions + low CTR = meta problem, not content problem. Pages at position 1-20 with CTR below 2% are the first target for rewrites. GSC shows this directly.
+
+**Google rewrite signal:** If GSC shows a different title or description than what's on the page, Google rejected ours. Read what Google chose — it usually reveals what they think the page is actually about.
 
 ---
 

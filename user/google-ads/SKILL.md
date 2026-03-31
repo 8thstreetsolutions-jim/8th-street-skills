@@ -1,8 +1,7 @@
 <!--
-version: 2.0
+version: 2.1
 date: 2026-04-01
-source: Major update — active client table, human-in-the-loop thresholds, Porch/Ads
-        relationship, Plausible cross-reference, state-specific details, agent status
+source: Added Quality Signal Audit section (2026), AI Mode consideration
 -->
 
 ---
@@ -90,6 +89,42 @@ Run this for every account, every month:
 9. **Budget pacing** — check for early-day exhaustion (run out before 5 PM = wasted
    afternoon intent)
 10. **Document all changes** in client file with date and reason
+
+---
+
+## Quality Signal Audit (Monthly)
+
+The Big Three that determine Quality Score: ad relevance, expected CTR, landing page experience.
+
+**Ad relevance check:**
+- Pull keyword report, filter for "Below average" ad relevance
+- Fix: Match ad text language more directly to the keyword. Split ad groups that have too many unrelated keywords.
+- Target: All primary keywords at "Average" or above
+
+**Expected CTR check:**
+- "Below average" expected CTR = ad copy isn't compelling vs competitors
+- Fix: Lead with fight/action language. Include DMV deadline. Make the offer specific.
+- Target: Primary keywords at "Average" or above
+
+**Landing page experience check:**
+- "Below average" = page doesn't deliver the promise of the ad, or loads slowly
+- Fix: Confirm ad message matches page hero. Confirm phone number visible above fold. Check mobile load speed.
+- Target: All landing pages at "Average" or above
+
+**Quality Score as trend, not snapshot:**
+- Don't optimize for the number. Optimize for the trend.
+- If QS trending down on a converting keyword — something changed. Investigate.
+- If QS is low but $/conv is good — don't restructure just to improve the score.
+
+**Conversion data quality (monthly check):**
+- Verify all three conversion types fired at least once in the past 7 days
+- Cross-reference with Plausible — if Plausible shows phone clicks but Google Ads doesn't, sendBeacon is broken
+- The conversion data is what Google's AI optimizes toward. Bad data = bad optimization.
+
+**AI Mode consideration (2026):**
+- Google's AI Mode (March 2025) shows ads inside AI-generated summaries.
+- Conversational ad copy performs better in this context — "Can a DUI be fought?" outperforms "Experienced DUI Attorney."
+- Test: Does the ad answer a question the prospect is actually asking?
 
 ---
 
