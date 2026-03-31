@@ -1,7 +1,7 @@
 <!--
-version: 1.0
+version: 1.1
 date: 2026-04-01
-source: New skill — autonomous research agent design
+source: Added Evaluation Standard section — sources evaluated not relayed
 -->
 
 ---
@@ -108,6 +108,19 @@ Signals that warrant a flagged decision:
 - Not strategic direction (Jim sets that)
 
 The research skill exists to make the harness smarter. Nothing else.
+
+---
+
+## Evaluation Standard
+
+Sources are evaluated, not relayed. A YouTuber citing a paper is a pointer to the paper, not a conclusion. Process:
+
+1. Find the primary source — the actual paper, release note, or documented research
+2. Evaluate it independently — does the underlying finding hold up?
+3. Apply it to our context — does it specifically change how we operate?
+4. Decide together — Jim and Claude.ai assess strategic implications before anything changes
+
+Berman, Patel, Nate Long and similar voices are useful signal detectors. They are not decision-makers. We read what they point to and decide for ourselves.
 
 ---
 
