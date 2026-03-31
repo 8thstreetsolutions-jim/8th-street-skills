@@ -1,11 +1,3 @@
-<!--
-CANONICAL COPY: This file is version controlled here in ~/skills/
-LIVE COPY: ~/www/8thstreetsolutions.com/public_html/claude.md
-When updating claude.md, update ~/skills/claude.md and run:
-cd ~/skills && git add -A && git commit -m "claude.md — [what changed]" && git push
-Then copy to public_html to deploy.
--->
-
 # 8th Street Solutions — Claude Code Context
 ## Last updated: March 30, 2026 (claude.md improvements pass)
 

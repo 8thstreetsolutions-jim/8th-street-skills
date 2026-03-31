@@ -1,7 +1,7 @@
 <!--
-version: 2.1
+version: 2.2
 date: 2026-04-01
-source: Added Git Commit Rule — keep GitHub in sync after every skill edit
+source: Added research and evals to Skills Directory table
 -->
 
 ---
@@ -378,6 +378,8 @@ All at ~/skills/user/ on SiteGround:
 | pathacross | PathAcross strategic work | PathAcross sessions |
 | spaces | PathAcross Spaces builds | Spaces sessions |
 | skill-creation | Building and updating skills | When creating/updating a skill |
+| research | ~/skills/user/research/SKILL.md | When running research cycle or processing new source material |
+| evals | ~/skills/user/evals/SKILL.md | When running overnight loop or auditing skill output quality |
 
 **Note on foundation consolidation (March 2026):** foundation-second-sites and
 foundation-community-resource are now consolidated into the main foundation/SKILL.md.
