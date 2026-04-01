@@ -92,6 +92,7 @@ Apply on every session, every file touched:
    `$page_title`, `$page_description`, schema strings, and all variable assignments.
 4. **`$schemaMarkup` must be a raw JSON string, NOT a PHP array.**
 5. **No PHP closing `?>` at end of file.** Trailing whitespace causes header already sent errors.
+6. **Meta tags, canonical, and JSON-LD schema blocks belong in `<head>` — never in footer includes or below main content.**
 
 ---
 
