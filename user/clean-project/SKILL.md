@@ -258,3 +258,14 @@ NEXT SESSION KICKOFF -- [Project] -- [Date]
 *Clean Project — End-of-Cycle Discipline*
 *8th Street Solutions / PathAcross*
 *Run after every major work cycle. Skills live at ~/skills/user/ on SiteGround.*
+
+---
+
+## Closing Step — Session Debrief
+
+Before ending any session, ask Claude to produce a session debrief. Route findings to the relevant skill before closing the thread.
+
+**Prompt to use:**
+"Give me a session debrief — what changed, what was decided, and what needs to go into which skill."
+
+This is a required closing step, not optional. The debrief habit is only useful if findings land in skills before the thread closes.

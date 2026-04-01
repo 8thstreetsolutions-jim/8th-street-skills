@@ -429,6 +429,10 @@ in `<style>` block. No per-client CSS file needed.
 
 | Version | Change |
 |---------|--------|
+| v1.32 | First conversation email — jim@ only, minimal format, John removed |
+| v1.31 | No-lead conversation summary emails — jim@ only on session close |
+| v1.30 | message_sent analytics event — is_first_message flag included |
+| v1.29 | Spam keyword filtering — SPAM_KEYWORDS, isSpamMessage() before Claude API |
 | v1.28 | Email suppression per account (OPEN_EMAIL_SUPPRESSED array) |
 | v1.27 | Exit intent email suppression |
 | v1.26 | Widget open emails on every deliberate open + first interaction email |
@@ -441,7 +445,7 @@ in `<style>` block. No per-client CSS file needed.
 | v1.18 | Rolled back From addresses to authenticated senders |
 | v1.13 | Conversation tracking for usage/billing |
 
-**Current:** v1.28 (March 25, 2026) · Widget: v2.17 · Model: claude-sonnet-4-20250514
+**Current:** v1.32 (April 1, 2026) · Widget: v2.17 · Model: claude-sonnet-4-20250514
 
 ---
 
