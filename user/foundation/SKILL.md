@@ -1,7 +1,7 @@
 <!--
-version: 2.1
+version: 2.2
 date: 2026-04-01
-source: Refactored into routing brain + subfiles. Content moved to clients.md,
+source: Added Session Close Routine one-liner
         new-build.md, schema.md, standards.md, verticals.md.
 -->
 
@@ -68,3 +68,6 @@ foundation/
 
 *Foundation — 8th Street Solutions*
 *Methodology only. Client data in clients/[client-id]/ on SiteGround.*
+
+---
+*Always follow the Session Close Routine in the work-smarter skill at the end of every session.*

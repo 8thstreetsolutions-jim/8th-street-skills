@@ -368,3 +368,6 @@ Google rewrites 62%+ of meta descriptions. Write them as ideal — compelling en
 *Curb Appeal — GSC Organic Growth Loop*
 *Methodology only. Client-specific rules and history in clients/[client-id]/curb-appeal.md*
 *Scales to any number of sites without skill changes.*
+
+---
+*Always follow the Session Close Routine in the work-smarter skill at the end of every session.*

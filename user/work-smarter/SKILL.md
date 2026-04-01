@@ -1,7 +1,7 @@
 <!--
-version: 2.2
+version: 2.3
 date: 2026-04-01
-source: Added research and evals to Skills Directory table
+source: Added Session Close Routine
 -->
 
 ---
@@ -432,5 +432,46 @@ at the level only humans can.
 
 ---
 
+
+## Session Close Routine
+
+At the end of every client session, before closing, CC must update the client context.md
+file on the relevant server. This is not optional — it is the last step of every session.
+
+**What to write:**
+- Date of session
+- What was done (brief bullets)
+- Any files changed and their status (lint clean, pushed live, etc.)
+- Deferred items — things discussed but not done
+- Next steps
+
+**Format:**
+```
+## Session Summary — [Date]
+
+### What Was Done
+- [bullet list]
+
+### Files Changed
+- [file — status]
+
+### Deferred
+- [list]
+
+### Next Steps
+- [list]
+
+### Site Status
+[one line]
+```
+
+**Where the file lives:**
+Check `~/www/8thstreetsolutions.com/public_html/clients/[client-id]/context.md`.
+SSH credentials are in that file or in `~/skills/user/foundation/clients.md`.
+
+**Rule:** If the session involved any work on a client site, update that client's
+context.md. If it was planning only with no files touched, a one-line note is enough.
+
+---
 *Work Smarter — 8th Street Solutions / PathAcross*
 *Created March 2026. Replaces agent-process. v2.0 updated March 31, 2026.*
