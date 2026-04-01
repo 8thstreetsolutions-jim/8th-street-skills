@@ -11,6 +11,7 @@
 | Heart of Illinois / Maureen | heartofillinoiscriminaldefense.com | Main Site | Foundation + Porch + Google Ads | Live |
 | Aquarius Lawyers (AU) | demo | Demo | Porch demo | Awaiting response |
 | Melnick Timmerman | demo | Demo | Foundation demo | Awaiting response |
+| Sharon Gibney Taylor | 8thstreetsolutions.com/sharon (demo) | Demo → Main Site | Foundation + Porch + Curb Appeal | In progress |
 
 **Reference build (Community Resource):** `peoriacriminaldefense.com` — March 2026
 
