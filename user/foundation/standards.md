@@ -194,6 +194,12 @@ Rules:
 - Always `encoding=\'utf-8\'`
 - Use `\u2014` for em dash (not `\xe2\x80\x94`)
 
+**Windows deployment:** PHP is not in the Windows PATH. Never attempt `php -l` locally on Windows. All file deployments use the base64 encode-and-decode pattern: encode locally with python3, decode on server into /tmp/, then move to final destination. Python heredocs and /dev/stdin do not work reliably on SiteGround SSH. /tmp/ file approach only. `php -l` validation always runs on the server via SSH, never locally on Windows.
+
+**No $() command substitution in bash.** Claude Code safety filter flags it as injection risk and stops execution. Use `xargs` instead: `find . -name "*.php" | xargs -I{} php -l {}` — For loops: write to a script file first, SCP to server, then execute.
+
+**No nested quotes in HTML attributes.** Assign to a variable first, then echo. Example: `<?php $meta_desc = htmlspecialchars($page_description ?? 'Default'); ?>` then `<meta name="description" content="<?php echo $meta_desc; ?>">` — Applies to all meta tags, canonical, OG tags, title, and any `href` or `src` that outputs a PHP variable.
+
 ---
 
 ## Current Standards (April 2026)
@@ -216,3 +222,13 @@ font-weight.
 
 **Deprecated (January 2026):** Practice Problem, Dataset, Sitelinks Search Box,
 SpecialAnnouncement, Q&A schema types.
+
+**BreadcrumbList insertion** — three patterns exist. Identify the pattern before inserting:
+
+**Pattern 1 — @graph pages (most common):** BreadcrumbList is a new node inside `@graph`. The closing structure is two lines — first bracket closes `@graph`, second closes `json_encode` array. Insert BEFORE the `@graph` close. Losing the `@graph` bracket puts BreadcrumbList outside `@graph` — PHP parses but schema is invalid.
+
+**Pattern 2 — Flat single block (no @graph):** Append as a separate concatenated block. BreadcrumbList needs its own `@context` since it is a standalone block. Use: `$schema_json .= "\n" . $breadcrumb_json;`
+
+**Pattern 3 — Dual flat (two blocks concatenated):** Add as a third block in the same concatenation line. Same `@context` requirement as Pattern 2.
+
+After the first session on any site, record which pattern each page uses in the site's `context.md` under a **Schema Patterns** section — eliminates the grep discovery pass on every future session.
