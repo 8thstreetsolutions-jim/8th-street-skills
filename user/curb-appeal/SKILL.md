@@ -86,8 +86,7 @@ Apply same scoring logic.
 10. **Update claude.md on server** — page inventory, what was done, what moved, what\'s
     next. Required, not optional.
 
-**GSC submissions are always human-initiated.** 10 URL inspection/day limit. Jim handles
-after visual review of live pages.
+**GSC submissions are always human-initiated.** 10 URL inspection/day limit per Google account — not per site. All properties share the same daily quota. Jim handles after visual review of live pages.
 
 **Session pacing:** Batch sessions (5–10 page changes, then pause 1–2 days) outperform
 daily single edits. Let Google process before the next batch.
