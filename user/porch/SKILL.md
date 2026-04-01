@@ -298,6 +298,8 @@ Ads landing pages are not.
 
 ## Prompt Writing Guide
 
+**Before writing any Porch responses, prompts, or FAQ content:** read `bad-examples.md` in this directory. It shows what failure looks like across 8 common patterns.
+
 ### Core Rules
 - **2–3 sentences max** — scared people don\'t read paragraphs
 - No markdown in responses — no bold, bullets, headers, numbered lists. Plain prose only.
