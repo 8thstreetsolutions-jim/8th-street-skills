@@ -1,7 +1,7 @@
 <!--
-version: 2.4
+version: 2.5
 date: 2026-04-01
-source: Added System zip step to Session Close Routine
+source: Added process reflection step to Session Close Routine
 -->
 
 ---
@@ -473,6 +473,8 @@ SSH credentials are in that file or in `~/skills/user/foundation/clients.md`.
 context.md. If it was planning only with no files touched, a one-line note is enough.
 
 **System zip:** If any skill file or system-level file changed this session, regenerate `8th-street-system.zip` and push to GitHub.
+
+**Process reflection:** After every task, add a “Process Notes” section to context.md with one question answered: “What could have made this faster or cleaner?” Even one line is enough. These accumulate and get reviewed in skills sessions.
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
