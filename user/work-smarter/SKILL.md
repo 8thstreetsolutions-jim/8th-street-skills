@@ -1,7 +1,7 @@
 <!--
-version: 2.3
+version: 2.4
 date: 2026-04-01
-source: Added Session Close Routine
+source: Added System zip step to Session Close Routine
 -->
 
 ---
@@ -471,6 +471,8 @@ SSH credentials are in that file or in `~/skills/user/foundation/clients.md`.
 
 **Rule:** If the session involved any work on a client site, update that client's
 context.md. If it was planning only with no files touched, a one-line note is enough.
+
+**System zip:** If any skill file or system-level file changed this session, regenerate `8th-street-system.zip` and push to GitHub.
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
