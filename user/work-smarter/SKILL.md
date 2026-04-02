@@ -1,8 +1,8 @@
 <!--
-version: 2.9
+version: 3.0
 date: 2026-04-02
-source: Skill reconciliation — 16 skills audited, version headers added to 3 skills, system-map.md updated
-v2.9: All skills now versioned; system-map.md skill count correct (16 total)
+source: Created skills-backlog.md; Session Start Rule references backlog for skills sessions
+v3.0: Known Gaps moved to dedicated backlog file; session start rule updated
 -->
 
 ---
@@ -57,6 +57,8 @@ Every CC session begins with:
 
 Then execute. Do not rely on memory from prior sessions. Claude.md is the live state of
 the project. Skill files are the operating manuals. Together they define what's true now.
+
+If this is a dedicated skills session, also read `clients/8th-street/skills-backlog.md` — it lists what needs a home and what’s parked.
 
 ---
 
@@ -529,4 +531,4 @@ context.md. If it was planning only with no files touched, a one-line note is en
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
-*Created March 2026. Replaces agent-process. v2.9 updated April 2, 2026.*
+*Created March 2026. Replaces agent-process. v3.0 updated April 2, 2026.*
