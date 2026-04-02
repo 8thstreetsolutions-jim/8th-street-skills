@@ -1,8 +1,8 @@
 <!--
-version: 2.6
+version: 2.7
 date: 2026-04-02
-source: Added process reflection step to Session Close Routine
-v2.6: Added Server Git Standard to Standard Operational Patterns
+source: Added versions.md regeneration step to Session Close Routine
+v2.7: Session Close now pushes live skill version manifest to public URL
 -->
 
 ---
@@ -501,8 +501,10 @@ context.md. If it was planning only with no files touched, a one-line note is en
 
 **System zip:** If any skill file or system-level file changed this session, regenerate `8th-street-system.zip` and push to GitHub.
 
+**Versions manifest:** Regenerate `versions.md` and push to `~/www/8thstreetsolutions.com/public_html/clients/8th-street/versions.md` — do this every session, whether or not skills changed. Pull version, date, and source from each skill’s header block. Public URL: https://8thstreetsolutions.com/clients/8th-street/versions.md
+
 **Process reflection:** After every task, add a “Process Notes” section to context.md with one question answered: “What could have made this faster or cleaner?” Even one line is enough. These accumulate and get reviewed in skills sessions.
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
-*Created March 2026. Replaces agent-process. v2.0 updated March 31, 2026.*
+*Created March 2026. Replaces agent-process. v2.7 updated April 2, 2026.*
