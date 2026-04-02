@@ -3,17 +3,30 @@
 
 ---
 
-## Active Client Builds
+## Active Clients
 
-| Client | Domain | Site Type | Products | Status |
-|--------|--------|-----------|----------|--------|
-| Andy Sotiropoulos | illinois-dui-defender.com | Main Site | Foundation + Porch + Google Ads | Live |
-| Heart of Illinois / Maureen | heartofillinoiscriminaldefense.com | Main Site | Foundation + Porch + Google Ads | Live |
-| Aquarius Lawyers (AU) | demo | Demo | Porch demo | Awaiting response |
-| Melnick Timmerman | demo | Demo | Foundation demo | Awaiting response |
-| Sharon Gibney Taylor | 8thstreetsolutions.com/sharon (demo) | Demo → Main Site | Foundation + Porch + Curb Appeal | Demo complete — 21 pages, ready for client presentation |
+| Client | client-id | Domain | Products | Status |
+|--------|-----------|--------|----------|--------|
+| Andy Sotiropoulos | andy-dui | illinois-dui-defender.com | Foundation + Google Ads | Live — 20+ guide pages, 30 city pages, 8 profession pages |
+| Heart of Illinois / Maureen | heart-il | heartofillinoiscriminaldefense.com | Foundation + Google Ads + Porch | Live |
+| Concierge Couples Counseling (Kendra Capalbo) | kendra-cc | conciergecouplescounseling.com | Foundation | Rewrite in progress |
+| Inreach Virtual (Emily Spruill) | inreach-virtual | inreachvirtual.com | Foundation | Live — 28 pages |
+| Peoria Criminal Defense | peoria-cd | peoriacriminaldefense.com | Foundation (resource site) | Live — 19 pages |
+| 8th Street Solutions | 8th-street | 8thstreetsolutions.com | Foundation + Porch + Curb Appeal | Live |
 
-**Reference build (Community Resource):** `peoriacriminaldefense.com` — March 2026
+## Prospects / Demos
+
+| Name | Demo Status | Notes |
+|------|-------------|-------|
+| Aquarius Lawyers | Awaiting response | — |
+| Melnick Timmerman | Awaiting response | — |
+| Sharon Gibney Taylor | Demo complete — 21 pages | 8thstreetsolutions.com/sharon/ — ready for client presentation |
+
+## Reference Builds
+
+| Site | Notes |
+|------|-------|
+| peoriacriminaldefense.com | Track 3 community resource — March 2026 |
 
 **Client files live at:** `~/www/8thstreetsolutions.com/public_html/clients/[client-id]/`
 

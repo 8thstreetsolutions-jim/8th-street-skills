@@ -1,9 +1,8 @@
 <!--
-version: 2.3
+version: 2.4
 date: 2026-04-02
-source: Added Session Close Routine one-liner
-        new-build.md, schema.md, standards.md, verticals.md.
-v2.3: Added New Client Setup checklist with git init requirement.
+source: clients.md — active client table rewritten; 6 active clients, Prospects section added
+v2.4: kendra-cc, inreach-virtual, peoria-cd added; Aquarius/Melnick moved to Prospects; Sharon to Prospects
 -->
 
 ---
