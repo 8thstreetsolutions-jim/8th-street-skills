@@ -1,8 +1,8 @@
 <!--
-version: 2.7
+version: 2.8
 date: 2026-04-02
-source: Added versions.md regeneration step to Session Close Routine
-v2.7: Session Close now pushes live skill version manifest to public URL
+source: Added Skill-to-Client Map; Session Close flags affected clients on skill changes
+v2.8: Skill changes now propagate to unworked client context.md files as one-line flags
 -->
 
 ---
@@ -414,6 +414,23 @@ Do not look for separate skill files for these — they live as sections within 
 
 ---
 
+## Skill-to-Client Map
+
+Use this during Session Close when any skill changed this session. Check which clients
+use that skill and flag their context.md if they weren’t worked on this session.
+
+| Skill | Clients That Use It |
+|-------|---------------------|
+| foundation | all |
+| foundation-cd-dui | andy-dui, heart-il |
+| foundation-business | peoria-cd, kendra-cc, inreach-virtual, 8th-street |
+| porch | andy-dui, heart-il, kendra-cc, inreach-virtual, 8th-street |
+| curb-appeal | all |
+| google-ads | andy-dui, heart-il |
+| site-infrastructure | all |
+
+---
+
 ## Vocabulary
 
 **Agent** — Claude plus tools plus multi-step autonomy. Takes actions, not just gives
@@ -499,6 +516,11 @@ SSH credentials are in that file or in `~/skills/user/foundation/clients.md`.
 **Rule:** If the session involved any work on a client site, update that client's
 context.md. If it was planning only with no files touched, a one-line note is enough.
 
+**Skill change flagging:** If any skill changed this session, check the Skill-to-Client Map above. For each affected client *not* worked on this session, append one line to their context.md:
+```
+<!-- skill: [skill-name] updated [date] — review next session -->
+```
+
 **System zip:** If any skill file or system-level file changed this session, regenerate `8th-street-system.zip` and push to GitHub.
 
 **Versions manifest:** Regenerate `versions.md` and push to `~/www/8thstreetsolutions.com/public_html/clients/8th-street/versions.md` — do this every session, whether or not skills changed. Pull version, date, and source from each skill’s header block. Public URL: https://8thstreetsolutions.com/clients/8th-street/versions.md
@@ -507,4 +529,4 @@ context.md. If it was planning only with no files touched, a one-line note is en
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
-*Created March 2026. Replaces agent-process. v2.7 updated April 2, 2026.*
+*Created March 2026. Replaces agent-process. v2.8 updated April 2, 2026.*
