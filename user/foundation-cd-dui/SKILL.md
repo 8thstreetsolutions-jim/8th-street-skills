@@ -1,3 +1,8 @@
+<!--
+version: 1.0
+date: 2026-04-02
+source: Added version header for manifest compatibility
+-->
 ---
 name: foundation-cd-dui
 description: "Build demo and full Foundation sites for criminal defense and DUI law firms. Use when (1) building or updating any law firm website for a CD/DUI firm, (2) creating a demo page for prospecting, (3) writing a Porch config for a law firm, (4) planning content for DUI or criminal defense pages, (5) sourcing attorney bios or firm credentials. Active clients: Andy Sotiropoulos (DUI, Illinois) and Heart of Illinois / Maureen (CD+DUI, Illinois). Always use this skill when Jim mentions a law firm demo, CD/DUI site build, law firm Porch config, or either active client."

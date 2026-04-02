@@ -1,3 +1,8 @@
+<!--
+version: 1.0
+date: 2026-04-02
+source: Added version header for manifest compatibility
+-->
 ---
 name: foundation-business
 description: "Build demo and full Foundation sites for non-law-firm businesses. Three tracks: (1) $500 small business demos for HVAC, plumber, electrician, roofer, landscaper, auto repair; (2) larger business clients with full marketing presence; (3) public resource / sponsored information sites built for SEO and AISEO authority, sponsored by a professional firm. Use when building or updating any business website that is NOT a law firm. Always use this skill when Jim mentions a business demo, the $500 pipeline, or any non-law-firm client site. Reference build for Track 3: peoriacriminaldefense.com."

@@ -1,8 +1,8 @@
 <!--
-version: 2.8
+version: 2.9
 date: 2026-04-02
-source: Added Skill-to-Client Map; Session Close flags affected clients on skill changes
-v2.8: Skill changes now propagate to unworked client context.md files as one-line flags
+source: Skill reconciliation — 16 skills audited, version headers added to 3 skills, system-map.md updated
+v2.9: All skills now versioned; system-map.md skill count correct (16 total)
 -->
 
 ---
@@ -529,4 +529,4 @@ context.md. If it was planning only with no files touched, a one-line note is en
 
 ---
 *Work Smarter — 8th Street Solutions / PathAcross*
-*Created March 2026. Replaces agent-process. v2.8 updated April 2, 2026.*
+*Created March 2026. Replaces agent-process. v2.9 updated April 2, 2026.*

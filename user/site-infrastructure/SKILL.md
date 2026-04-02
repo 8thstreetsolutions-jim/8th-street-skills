@@ -1,3 +1,8 @@
+<!--
+version: 1.0
+date: 2026-04-02
+source: Added version header for manifest compatibility
+-->
 ---
 name: site-infrastructure
 description: "Diagnose, fix, and maintain the technical infrastructure layer of any Foundation site. Use when working on 404 pages, sitemap.xml, robots.txt, .htaccess, config.php, or header/footer includes — independent of any build or SEO session. Triggers on: broken redirects, missing sitemap, crawl errors, include errors, config mismatches, htaccess rules, site not loading correctly."
