@@ -7,7 +7,7 @@
 
 | Client | client-id | Domain | Products | Status |
 |--------|-----------|--------|----------|--------|
-| Andy Sotiropoulos | andy-dui | illinois-dui-defender.com | Foundation + Google Ads | Live — 20+ guide pages, 30 city pages, 8 profession pages |
+| Andy Sotiropoulos | andy-dui | illinois-dui-defender.com | Foundation + Porch + Google Ads | Live — 20+ guide pages, 30 city pages, 8 profession pages |
 | Heart of Illinois / Maureen | heart-il | heartofillinoiscriminaldefense.com | Foundation + Google Ads + Porch | Live |
 | Concierge Couples Counseling (Kendra Capalbo) | kendra-cc | conciergecouplescounseling.com | Foundation | Rewrite in progress |
 | Inreach Virtual (Emily Spruill) | inreach-virtual | inreachvirtual.com | Foundation | Live — 28 pages |

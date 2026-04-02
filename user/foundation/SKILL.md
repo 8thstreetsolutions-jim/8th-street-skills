@@ -1,8 +1,8 @@
 <!--
-version: 2.4
+version: 2.5
 date: 2026-04-02
-source: clients.md — active client table rewritten; 6 active clients, Prospects section added
-v2.4: kendra-cc, inreach-virtual, peoria-cd added; Aquarius/Melnick moved to Prospects; Sharon to Prospects
+source: Andy Porch status corrected in context.md and clients.md
+v2.5: andy-dui Products active now includes Porch
 -->
 
 ---
