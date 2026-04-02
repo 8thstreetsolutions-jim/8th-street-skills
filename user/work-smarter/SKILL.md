@@ -1,7 +1,8 @@
 <!--
-version: 2.5
-date: 2026-04-01
+version: 2.6
+date: 2026-04-02
 source: Added process reflection step to Session Close Routine
+v2.6: Added Server Git Standard to Standard Operational Patterns
 -->
 
 ---
@@ -258,6 +259,32 @@ a parse error.
 
 ### Cache Flush
 After any PHP or content file change: `touch .htaccess` to flush SiteGround dynamic cache.
+
+### Server Git Standard
+
+Every server directory under active development must have git initialized — **including
+`~/www/8thstreetsolutions.com` itself**, not just client sites.
+
+**Rule:** Before the first CC commit on any server or site, confirm a git repo exists:
+
+    cd ~/www/[site-or-directory] && git status
+
+If not a repo, initialize it:
+
+    # 1. Write .gitignore first (covers logs/, webstats/, *.zip, *.gz, *.log,
+    #    php_errorlog, __pycache__, cache dirs, gateway runtime dirs)
+    # 2. git init && git add -A && git commit -m "Initial commit"
+
+**Sites confirmed under git (as of 2026-04-02):**
+- `~/skills/` — git repo, committed to GitHub after every skill edit
+- `~/www/heartofillinoiscriminaldefense.com/` — initialized 2026-04-02
+- `~/www/8thstreetsolutions.com/` — initialized 2026-04-02
+
+**Not yet confirmed:** PathAcross, Peoria Criminal Defense, InReach Virtual —
+check before first CC commit on those servers.
+
+**foundation/SKILL.md v2.3** has the git init step in the New Client Setup Checklist.
+This rule extends that standard to all sites, not just client onboarding.
 
 ### End of Cycle Cleanup
 When a work thread is complete, read ~/skills/user/clean-project/SKILL.md and run the

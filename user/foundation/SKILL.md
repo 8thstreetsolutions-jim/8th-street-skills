@@ -1,8 +1,9 @@
 <!--
-version: 2.2
-date: 2026-04-01
+version: 2.3
+date: 2026-04-02
 source: Added Session Close Routine one-liner
         new-build.md, schema.md, standards.md, verticals.md.
+v2.3: Added New Client Setup checklist with git init requirement.
 -->
 
 ---
@@ -35,6 +36,24 @@ convert. No WordPress. No CMS. Every site ships from the same structure and stan
 **Note on site type consolidation (March 2026):** `foundation-second-sites` and
 `foundation-community-resource` are consolidated here. Do not look for separate skill
 files — they live in new-build.md.
+
+---
+
+## New Client Setup Checklist
+
+Run through this when onboarding a new Foundation site for the first time:
+
+- [ ] `clients/[client-id]/context.md` created with SSH host, user, port, key, and web root
+- [ ] SSH connection tested
+- [ ] **`git init` run on the server** — CC cannot commit without a git repo. Run:
+      `cd ~/www/[domain] && git init && git add -A && git commit -m "Initial commit"`
+      Add a `.gitignore` before this step to exclude `logs/`, `webstats/`, `*.zip`, `*.gz`
+- [ ] `change-log.md` created in `clients/[client-id]/`
+- [ ] Page inventory table added to `clients/[client-id]/context.md`
+- [ ] `php -l` passes on all files
+- [ ] Site confirmed live in browser
+
+**git is required for CC sessions.** Without it, file edits deploy but cannot be version-controlled or rolled back. Flag to Jim if a client site arrives without git.
 
 ---
 
