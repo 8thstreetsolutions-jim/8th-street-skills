@@ -13,6 +13,7 @@
 | Inreach Virtual (Emily Spruill) | inreach-virtual | inreachvirtual.com | Foundation | Live — 28 pages |
 | Peoria Criminal Defense | peoria-cd | peoriacriminaldefense.com | Foundation (resource site) | Live — 19 pages |
 | 8th Street Solutions | 8th-street | 8thstreetsolutions.com | Foundation + Porch + Curb Appeal | Live |
+| Sharon Gibney Taylor | sharon | 8thstreetsolutions.com/sharon (demo) | Foundation + Porch | Demo live — awaiting client approval |
 
 ## Prospects / Demos
 

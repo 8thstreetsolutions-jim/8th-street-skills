@@ -44,7 +44,22 @@ Trust = settlement record.
 
 **Family Law:** Urgency = children, assets, temporary orders. Sensitive — never take sides.
 
-**Estate Planning:** Lower urgency. Framing = protecting family, peace of mind.
+**Estate Planning**
+- Lower urgency than litigation verticals. Never emergency/fear framing.
+- Primary framing: protecting family, peace of mind, legacy.
+- Differentiator angle: if the attorney has corporate, tax, or business law background —
+  lead with it. This is rare in estate planning and highly credible to business owner clients.
+- Target client segments: individuals/families (primary), business owners (high-value secondary)
+- Business owners need separate content: business succession, buy-sell agreements, LLC/estate
+  integration. Build a standalone "For Business Owners" page.
+- knowsAbout examples: "estate planning Columbus Ohio", "wills and trusts Ohio",
+  "business succession planning", "revocable living trusts", "probate Columbus Ohio",
+  "estate tax planning Ohio", "powers of attorney Ohio"
+- Schema: LegalService. FAQPage on every service page (6-8 questions minimum per page).
+- Location pages: one per suburb served.
+- FAQ page: 20+ questions. Always in nav. Covers basics, trust vs will, business owner
+  considerations, process questions.
+- Porch tone: warm, calm, low urgency. Estate planning is thoughtful, not emergency.
 
 **Bankruptcy:** Urgency = creditor calls, garnishment. Framing = judgment-free fresh start.
 

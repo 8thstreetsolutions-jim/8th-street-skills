@@ -233,3 +233,69 @@ SpecialAnnouncement, Q&A schema types.
 **Pattern 3 — Dual flat (two blocks concatenated):** Add as a third block in the same concatenation line. Same `@context` requirement as Pattern 2.
 
 After the first session on any site, record which pattern each page uses in the site's `context.md` under a **Schema Patterns** section — eliminates the grep discovery pass on every future session.
+
+
+---
+
+## UI/UX Standards
+#### Applies to every Foundation site. These are defaults, not suggestions.
+
+**Buttons and interactive elements**
+- All buttons, CTAs, nav CTAs, form inputs, and dropdown menus: border-radius: 6px — never 2px, never 0
+- Body font minimum: 0.9375rem (15px). Nothing below this in body copy, footer text, or sidebar cards.
+- Heading sizes scale up from there — do not reduce headings to accommodate a smaller body size.
+
+**Navigation**
+- Standard nav order: Home | About | Services (dropdown) | FAQ | [CTA button]
+- Services dropdown contains all practice area / service pages
+- FAQ is always a nav item — never footer-only
+- CTA button in nav: "Schedule a Consultation" or equivalent — always rightmost, always styled as .nav-cta
+
+**Dropdown hover fix (CSS)**
+When building nav dropdowns, always use this pattern to prevent the dropdown from
+disappearing before the user can click:
+```css
+.nav-dropdown {
+  padding-top: 8px;
+  margin-top: -4px;
+}
+.has-dropdown:hover .nav-dropdown,
+.nav-dropdown:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+```
+The dual hover rule is required — CSS-only :hover on the parent alone creates a gap
+that closes the dropdown mid-click.
+
+**Demo sites**
+Never include a "demo site" banner or attribution strip on client-facing demo work.
+The site itself is the work product. No banners.
+
+**Color hierarchy**
+Every Foundation site uses three tiers of background:
+- Darkest: header + footer (--navy-dark or equivalent)
+- Mid: hero sections + footer CTA band (--navy-mid or equivalent)
+- Light: main page body (white), with cream/gold used only for highlight boxes and cards
+Main body background is always white except where highlights are intentional.
+
+**Footer structure (standard 3-column)**
+- Col 1 (left): Contact info — firm name, tagline, phone, email, credentials block
+- Col 2 (center): Service area / location links + licensing note
+- Col 3 (right): Testimonial — blockquote with gold left border
+Footer bottom bar: copyright · Privacy Policy · Disclaimer (all three, always)
+Privacy Policy and Disclaimer live in the bottom bar only — not in footer nav columns.
+Footer nav columns are not used in the standard 3-column footer.
+Services are in the nav dropdown, not the footer.
+
+**In-body CTAs**
+- Footer CTA band: present on every page (in footer.php — automatic)
+- In-body CTAs: homepage hero only. Interior pages use footer CTA only.
+
+**Credential band / stat bar**
+Do not use stat bands on homepages by default. Integrate metrics into the differentiator
+section or about page instead.
+
+**Services grid**
+Homepage service cards: always 2x2 grid (repeat(2, 1fr)), max-width: 860px, centered.
+Never 3+1 or auto-fill without a max-width constraint.
