@@ -545,6 +545,7 @@ SESSION CLOSE COMPLETE — [date]
 The zip is the portable snapshot of the entire 8th Street system.
 It lives at:
 ~/www/8thstreetsolutions.com/public_html/clients/8th-street/8th-street-system.zip
+NEVER write the zip to public_html root. Always write to clients/8th-street/ only.
 
 It contains:
 - All skill files: /home/u3063-yznvsscqgtmo/skills/user/

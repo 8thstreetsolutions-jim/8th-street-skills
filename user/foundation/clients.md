@@ -21,7 +21,6 @@
 |------|-------------|-------|
 | Aquarius Lawyers | Awaiting response | — |
 | Melnick Timmerman | Awaiting response | — |
-| Sharon Gibney Taylor | Demo complete — 21 pages | 8thstreetsolutions.com/sharon/ — ready for client presentation |
 
 ## Reference Builds
 
