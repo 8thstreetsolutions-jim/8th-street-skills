@@ -226,6 +226,14 @@ fire on submit event with sendBeacon.
 4. Phone conversion goal must be set as Primary manually after any account restructure —
    Google defaults phone clicks to Secondary
 
+### Tracking Learnings (April 2026)
+
+- **trackPhoneClick / trackEmailClick must be defined in `<head>`, not footer.php.** On mobile, the browser hands off to the dialer before footer loads — the function doesn’t exist yet and the conversion never fires. Define all tracking functions in header.php, early in `<head>`.
+- **Form submit conversion must fire on the success/thank-you page load, not on the submit event.** PHP redirect creates a race condition that kills the beacon before it fires.
+- **Excluded keywords can still fire and generate spend if exclusions are applied at the ad group level only.** Always apply negative keyword exclusions at the campaign level. Verify this any time excluded terms appear in search term reports with clicks.
+- **“Calls from Website” (Google native) requires Google forwarding numbers.** Without forwarding numbers configured, this conversion action will never fire regardless of how tracking is set up. If a client has no forwarding numbers, demote this action and rely on manual trackPhoneClick() via sendBeacon only.
+- **Google’s default conversion actions (Page view, Engagement, Directions, etc.) cannot always be demoted from Primary through the conversions UI** — Google has restricted this in some accounts. Workaround: set campaign-level Goals to override account defaults and hand-pick which conversion actions the campaign optimizes toward.
+
 ### Plausible Cross-Reference
 Plausible tracks all site visitors and events independently of Google. Use it to:
 - Verify conversion counts aren\'t inflated by bot traffic
