@@ -1,8 +1,9 @@
 <!--
-version: 2.0
+version: 2.1
 date: 2026-04-01
 source: Update — "when to invoke" section, relationship to daily workflow and work-smarter,
         practical invocation triggers, relationship between commercial layer and source
+v2.1: Added output contract
 -->
 
 ---
@@ -23,6 +24,15 @@ Every product, every page, every config, every decision made here has something 
 it. This skill holds that. When the work drifts — when it starts to feel like optimization
 instead of service, extraction instead of care, cleverness instead of presence — come back
 here.
+
+---
+
+
+## What This Skill Produces
+- Output type: Alignment assessment — a clear read on whether the work, decision, or direction is oriented correctly
+- Always includes: The specific misalignment identified (if any); the corrected framing or direction; grounding in the source principles in this skill
+- Never includes: Process checklists, build instructions, or task execution — this skill orients, it does not build
+- Handoff format: One clear recommendation: proceed as planned / reframe as follows / stop and discuss with Jim
 
 ---
 

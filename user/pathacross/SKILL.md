@@ -1,8 +1,9 @@
 <!--
-version: 2.0
+version: 2.1
 date: 2026-04-01
 source: Update — dashboard URL, SSH connection, morning agent status, session start rule,
         PathAcross GSC filter note, aggressive Space expansion rationale strengthened
+v2.1: Added output contract
 -->
 
 ---
@@ -12,6 +13,15 @@ description: "Build, maintain, and evolve PathAcross and the Space network. Use 
 
 # PathAcross
 ## Build and Maintenance Skill
+
+---
+
+
+## What This Skill Produces
+- Output type: Built or updated PathAcross platform components (PHP files, api.php, Blue config, Space pages, WisdomBase entries)
+- Always includes: Session notes updated in `~/www/pathacross.com/public_html/claude.md`; system-state.md updated if architecture changed; WisdomBase entries flagged for Jim to paste manually
+- Never includes: Auto-writing to WisdomBase (Jim only); Blue coaching lane changes without Jim review; new Spaces going live without Jim sign-off
+- Handoff format: Summary of what was built/changed + any bridge crossing data or GSC findings + open items for Jim
 
 ---
 

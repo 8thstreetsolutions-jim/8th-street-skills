@@ -1,7 +1,8 @@
 <!--
-version: 1.0
+version: 1.1
 date: 2026-04-02
 source: Added version header for manifest compatibility
+v1.1: Added output contract
 -->
 ---
 name: foundation-business
@@ -10,6 +11,15 @@ description: "Build demo and full Foundation sites for non-law-firm businesses. 
 
 # Foundation Business
 ## Non-Law-Firm Businesses
+
+---
+
+
+## What This Skill Produces
+- Output type: Built or updated Foundation site for a non-law-firm business (PHP files deployed to SiteGround)
+- Always includes: config.php populated with all client variables; reading level check on all public content; change logged in `clients/[client-id]/change-log.md`
+- Never includes: WordPress or CMS; content published without Jim review; law firm patterns (use foundation-cd-dui instead)
+- Handoff format: Live demo URL or updated site URL + config variables used + any client info still needed
 
 ---
 

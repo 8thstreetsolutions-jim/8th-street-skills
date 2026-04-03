@@ -1,7 +1,8 @@
 <!--
-version: 1.0
+version: 1.1
 date: 2026-04-02
 source: Added version header for manifest compatibility
+v1.1: Added output contract
 -->
 ---
 name: site-infrastructure
@@ -13,6 +14,15 @@ description: "Diagnose, fix, and maintain the technical infrastructure layer of 
 The technical foundation every Foundation site requires to function correctly. This skill is called independently — not only during builds or SEO sessions.
 
 **Client-specific notes in:** `clients/[client-id]/context.md` on SiteGround.
+
+---
+
+
+## What This Skill Produces
+- Output type: Fixed or verified technical infrastructure files (.htaccess, config.php, sitemap.xml, robots.txt, 404.php) deployed to the client site
+- Always includes: Diagnostic sequence run before any changes; `php -l` on any changed PHP files; change logged in `clients/[client-id]/change-log.md`
+- Never includes: Content or SEO changes (use curb-appeal); build work (use foundation); anything beyond the six infrastructure components
+- Handoff format: Checklist of components verified/fixed + any items requiring Jim's review before going live
 
 ---
 

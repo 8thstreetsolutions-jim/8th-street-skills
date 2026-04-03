@@ -1,8 +1,9 @@
 <!--
-version: 2.5
+version: 2.6
 date: 2026-04-02
 source: Andy Porch status corrected in context.md and clients.md
 v2.5: andy-dui Products active now includes Porch
+v2.6: Added output contract
 -->
 
 ---
@@ -15,6 +16,15 @@ description: "Build, maintain, and grow any Foundation site — new builds, seco
 
 Foundation is the core product: 40–60 page PHP sites, fast and clean, built to rank and
 convert. No WordPress. No CMS. Every site ships from the same structure and standards.
+
+---
+
+
+## What This Skill Produces
+- Output type: Built or updated Foundation site (PHP files deployed to SiteGround)
+- Always includes: All changes logged in `clients/[client-id]/change-log.md`; `php -l` passed on all files; subfile(s) consulted per task routing table
+- Never includes: Content going live without Jim review; decisions with client-relationship implications made autonomously
+- Handoff format: Summary of pages built/changed + any open items requiring Jim's input
 
 ---
 

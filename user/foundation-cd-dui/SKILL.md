@@ -1,7 +1,8 @@
 <!--
-version: 1.0
+version: 1.1
 date: 2026-04-02
 source: Added version header for manifest compatibility
+v1.1: Added output contract
 -->
 ---
 name: foundation-cd-dui
@@ -10,6 +11,15 @@ description: "Build demo and full Foundation sites for criminal defense and DUI 
 
 # Foundation CD/DUI
 ## Criminal Defense & DUI Law Firms
+
+---
+
+
+## What This Skill Produces
+- Output type: Built or updated Foundation site for a CD/DUI law firm (PHP files deployed to SiteGround)
+- Always includes: State-specific DMV deadline verified and present on homepage, DUI page, and Porch KB; reading level check (target 8th grade); change logged in `clients/[client-id]/change-log.md`
+- Never includes: DMV deadlines assumed without verification; content published without Jim review; generic (non-vertical) copy patterns
+- Handoff format: Live page URLs + Porch KB entries (if written) + any client info still needed
 
 ---
 

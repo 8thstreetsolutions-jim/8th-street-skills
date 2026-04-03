@@ -1,9 +1,10 @@
 <!--
-version: 2.0
+version: 2.1
 date: 2026-04-01
 source: Major update — three-layer KB architecture, active accounts table, monthly refresh
         process, email suppression ops, demo subdomain architecture, no-Porch-on-Ads rule,
         self-serve flow, dashboard URL, KB FAQ writing depth
+v2.1: Added output contract
 -->
 
 ---
@@ -19,6 +20,15 @@ details in clients/[client-id]/porch.md on SiteGround."
 
 # Porch
 ## AI Chat Widget System
+
+---
+
+
+## What This Skill Produces
+- Output type: Porch client config JSON (new or updated), KB content, or api.php/widget.js fixes deployed to SiteGround
+- Always includes: Config validated against three-layer KB architecture; changes logged in `clients/[client-id]/change-log.md`; no-Porch-on-Ads rule checked
+- Never includes: Pushing for contact info in widget responses; configs going live without Jim review; changes to the dashboard or billing layer
+- Handoff format: Updated config file path on SiteGround + summary of KB changes + any client-specific rules added
 
 ---
 

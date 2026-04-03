@@ -1,7 +1,8 @@
 <!--
-version: 0.1
+version: 0.2
 date: 2026-04-01
 source: Stub — overnight loop designed, build in progress
+v0.2: Added output contract
 -->
 
 ---
@@ -11,6 +12,15 @@ description: "The nightly automation loop that reads all data sources, runs eval
 
 # Overnight Loop
 ## Status: Designed — Build In Progress
+
+---
+
+
+## What This Skill Produces
+- Output type: Nightly automation scripts + morning report email (when built); currently: build specs and proposal file format definitions
+- Always includes: Proposal files in `~/overnight-reports/YYYY-MM-DD/` per component; consolidated email to jim@ with flagged items requiring human decision
+- Never includes: Autonomous skill edits pushed to production (proposals only — Jim approves); actions taken on client accounts without human review
+- Handoff format: Structured proposal files per skill area (curb-appeal-proposals.md, ads-proposals.md, etc.) ready for Jim's morning review
 
 ---
 

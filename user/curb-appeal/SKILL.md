@@ -1,7 +1,8 @@
 <!--
-version: 2.1
+version: 2.2
 date: 2026-04-01
 source: Added Meta Title and Description Standards section (2026)
+v2.2: Added output contract
 -->
 
 ---
@@ -29,6 +30,15 @@ citations are off-page — separate skill.
 
 **Client-specific rules and history in:** `clients/[client-id]/curb-appeal.md` on
 SiteGround. Read that file before any client session.
+
+---
+
+
+## What This Skill Produces
+- Output type: Modified or new PHP pages deployed to the client site, plus a URL list for GSC submission
+- Always includes: List of new/changed URLs (clean block, ready to paste); updated `clients/[client-id]/curb-appeal.md` with session log; `php -l` passed on all changed files
+- Never includes: GSC submission (Jim handles); GBP posts, reviews, or directory work; off-page actions
+- Handoff format: URL block for Jim's GSC inspection queue; change summary for client file
 
 ---
 
