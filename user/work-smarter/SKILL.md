@@ -1,6 +1,6 @@
 <!--
-version: 3.0
-date: 2026-04-02
+version: 2.6
+date: 2026-04-03
 source: Created skills-backlog.md; Session Start Rule references backlog for skills sessions
 v3.0: Known Gaps moved to dedicated backlog file; session start rule updated
 -->
@@ -479,56 +479,82 @@ at the level only humans can.
 ---
 
 
-## Session Close Routine
-
-At the end of every client session, before closing, CC must update the client context.md
-file on the relevant server. This is not optional — it is the last step of every session.
-
-**What to write:**
-- Date of session
-- What was done (brief bullets)
-- Any files changed and their status (lint clean, pushed live, etc.)
-- Deferred items — things discussed but not done
-- Next steps
-
-**Format:**
-```
-## Session Summary — [Date]
-
-### What Was Done
-- [bullet list]
-
-### Files Changed
-- [file — status]
-
-### Deferred
-- [list]
-
-### Next Steps
-- [list]
-
-### Site Status
-[one line]
-```
-
-**Where the file lives:**
-Check `~/www/8thstreetsolutions.com/public_html/clients/[client-id]/context.md`.
-SSH credentials are in that file or in `~/skills/user/foundation/clients.md`.
-
-**Rule:** If the session involved any work on a client site, update that client's
-context.md. If it was planning only with no files touched, a one-line note is enough.
-
-**Skill change flagging:** If any skill changed this session, check the Skill-to-Client Map above. For each affected client *not* worked on this session, append one line to their context.md:
-```
-<!-- skill: [skill-name] updated [date] — review next session -->
-```
-
-**System zip:** If any skill file or system-level file changed this session, regenerate `8th-street-system.zip` and push to GitHub.
-
-**Versions manifest:** Regenerate `versions.md` and push to `~/www/8thstreetsolutions.com/public_html/clients/8th-street/versions.md` — do this every session, whether or not skills changed. Pull version, date, and source from each skill’s header block. Public URL: https://8thstreetsolutions.com/clients/8th-street/versions.md
-
-**Process reflection:** After every task, add a “Process Notes” section to context.md with one question answered: “What could have made this faster or cleaner?” Even one line is enough. These accumulate and get reviewed in skills sessions.
+## SESSION CLOSE — HARD STOP
+## The session is NOT complete until every item below is confirmed.
+## Do not summarize and stop. Run this checklist out loud.
 
 ---
+
+### Step 1 — Skill files
+If any skill file was edited this session:
+- Bump version number and date in that skill’s header
+- Run: cd ~/skills && git add -A && git commit -m "[skill] — [what changed]" && git push
+- Confirm: echo "Git pushed — $(cd ~/skills && git log --oneline -1)"
+
+If no skill files were edited: confirm “No skill changes this session.”
+
+---
+
+### Step 2 — Client files
+For every client whose site was touched this session:
+
+Update context.md at:
+~/www/8thstreetsolutions.com/public_html/clients/[client-id]/context.md
+- Current phase
+- Open items
+- Any new notes
+
+Append to change-log.md at:
+~/www/8thstreetsolutions.com/public_html/clients/[client-id]/change-log.md
+
+Format:
+## [YYYY-MM-DD]
+- [What was built or changed — specific, not vague]
+- [Files changed and status]
+- [Deferred items]
+- [Next steps]
+
+If no client site work was done: confirm “No client site changes this session.”
+
+---
+
+### Step 3 — Regenerate zip
+Always run after any skill or client file changes:
+
+cd ~/www/8thstreetsolutions.com/public_html
+zip -r clients/8th-street/8th-street-system.zip \
+  /home/u3063-yznvsscqgtmo/skills/user/ \
+  clients/
+
+Confirm: ls -lh clients/8th-street/8th-street-system.zip
+
+---
+
+### Step 4 — Report to Jim
+End every session with this exact format:
+
+SESSION CLOSE COMPLETE — [date]
+- Git: [commit hash] or "no skill changes"
+- Clients updated: [list] or "none"
+- Zip: [file size] — regenerated
+- Open items for next session: [list or "none"]
+
+---
+
+### What the zip contains
+The zip is the portable snapshot of the entire 8th Street system.
+It lives at:
+~/www/8thstreetsolutions.com/public_html/clients/8th-street/8th-street-system.zip
+
+It contains:
+- All skill files: /home/u3063-yznvsscqgtmo/skills/user/
+- All client context and change-log files: clients/
+
+Jim uploads this zip when starting a Chat thread that needs
+system context. CC reads from the server directly — no zip needed.
+GitHub is the safety backup — push happens automatically in Step 1.
+
+---
+
 *Work Smarter — 8th Street Solutions / PathAcross*
-*Created March 2026. Replaces agent-process. v3.0 updated April 2, 2026.*
+*Session close is mandatory. The session is not done until Step 4 is reported.*
