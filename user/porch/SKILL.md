@@ -533,3 +533,7 @@ Never hardcode the exact number of dashes — counts vary by section.
 *Porch — AI Chat Widget System*
 *Methodology only. Client configs in clients/[client-id]/porch.md*
 *Scales to any number of clients without skill changes.*
+
+## Widget Bubble Standards
+
+Bubble background uses accentColor, not primaryColor. Choose accentColor to contrast against the client site, not match it. Page-specific bubble text is handled by getPageBubbleText() which pulls from pageTeasers — no separate config needed. Proactive nudge requires 50% scroll depth AND 20s elapsed.
